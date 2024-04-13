@@ -1,0 +1,6 @@
+2024-04-12 20:40:56,734 DEBUG com.mkyong.HelloWorld [main] Hello from Logback
+2024-04-12 20:40:56,735 DEBUG com.mkyong.HelloWorld [main] getNumber() : 5
+2024-04-12 20:40:56,736 INFO com.mkyong.HelloWorld [main] User John is 30 years old.
+2024-04-12 20:45:27,364 DEBUG com.mkyong.HelloWorld [main] Hello from Logback
+2024-04-12 20:45:27,364 DEBUG com.mkyong.HelloWorld [main] getNumber() : 5
+2024-04-12 20:45:27,364 INFO com.mkyong.HelloWorld [main] User John is 30 years old.

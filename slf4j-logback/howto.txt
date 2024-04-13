@@ -1,0 +1,8 @@
+1.  java -jar target\slf4j-logback-1.0.jar
+2. simplelogger.properties, once present, overrides logback.xml ?? Also depends on pom.xml
+
+A. SLF4J works by tself and use simplelogger.properties,
+B. While llogback, using SLF4J underlying, also works by itself and use logback.xml.
+C. When both logback.xml and simplelogger.properties are present and both are also present in pom.xml
+logback is used.
+D. Goal. Log each individual file to individual log and also logs all of them to a single log.

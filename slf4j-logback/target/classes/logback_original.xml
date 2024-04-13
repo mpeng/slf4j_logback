@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true">
 
-    <property name="BATCH_LOG" value="${log.name}"/>
-    <property name="APP_LOG" value="./logs/icms-batch.log"/>
+    <property name="HOME_LOG" value="${log.name}"/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
@@ -12,17 +11,8 @@
         </layout>
     </appender>
 
-    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>${BATCH_LOG}</file>
-
-        <append>true</append>
-        <encoder>
-            <pattern>%d [%thread] %-5level %logger{35} - %msg%n</pattern>
-        </encoder>
-    </appender>
-
     <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${APP_LOG}</file>
+        <file>${HOME_LOG}</file>
 
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>logs/archived/app.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
@@ -47,10 +37,8 @@
         <queueSize>512</queueSize>
     </appender>
 
-
     <logger name="com.mkyong" level="debug" additivity="false">
         <appender-ref ref="ASYNC"/>
-        <appender-ref ref="FILE"/>
         <appender-ref ref="CONSOLE"/>
     </logger>
 

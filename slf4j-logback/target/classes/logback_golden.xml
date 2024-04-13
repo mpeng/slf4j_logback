@@ -14,16 +14,14 @@
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>${BATCH_LOG}</file>
-
         <append>true</append>
         <encoder>
             <pattern>%d [%thread] %-5level %logger{35} - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${APP_LOG}</file>
-
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>logs/archived/app.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <!-- each archived file, size max 10MB -->
@@ -33,25 +31,19 @@
             <!-- 60 days to keep -->
             <maxHistory>60</maxHistory>
         </rollingPolicy>
-
         <encoder>
             <pattern>%d %p %c{1.} [%t] %m%n</pattern>
         </encoder>
     </appender>
-
-    <!-- https://logback.qos.ch/manual/appenders.html#AsyncAppender -->
-    <!-- AsyncAppender will drop events of level TRACE, DEBUG and INFO if its queue is 80% full -->
     <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
-        <appender-ref ref="FILE-ROLLING" />
-        <!-- defaulr 256 -->
+        <appender-ref ref="ROLLING" />
         <queueSize>512</queueSize>
     </appender>
 
-
     <logger name="com.mkyong" level="debug" additivity="false">
-        <appender-ref ref="ASYNC"/>
-        <appender-ref ref="FILE"/>
         <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="ASYNC"/>
     </logger>
 
     <root level="error">
