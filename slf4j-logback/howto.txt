@@ -6,3 +6,7 @@ B. While llogback, using SLF4J underlying, also works by itself and use logback.
 C. When both logback.xml and simplelogger.properties are present and both are also present in pom.xml
 logback is used.
 D. Goal. Log each individual file to individual log and also logs all of them to a single log.
+
+The logback.xml allows you to log two separate log files:
+1. application log: This will log all messages into a single log file, also rotate: Default is logs/icms-batch.log
+2. batch log: This will log to C:\Work\PCAICMSBATCH\ICMS_Batch\business_processes\qa2\temp\himrk_daily_incoming_15p20230923.09-23-2023_0503.03-27-2024_1004_qa2_java_log.1

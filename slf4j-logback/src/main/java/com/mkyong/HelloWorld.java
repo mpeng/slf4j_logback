@@ -10,7 +10,7 @@ public class HelloWorld {
     public static void main(String[] args) {
 
         System.setProperty("log.name",
-          "C:\\Work\\PCAICMSBATCH\\ICMS_Batch\\business_processes\\qa2\\temp\\himrk_daily_incoming_15p20230923.09-23-2023_0503.03-27-2024_1004_qa2_java_log.1");
+          "C:\\Work\\PCAICMSBATCH\\ICMS_Batch\\business_processes\\qa2\\temp\\himrk_daily_incoming_15p20230923.09-23-2023_0503.03-27-2024_1004_qa2_java_log.2");
 
         new HelloWorld().logger.debug("Hello from Logback");
 
