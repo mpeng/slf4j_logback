@@ -4,32 +4,41 @@ import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.encoder.PatternLayoutEncoder;
 import ch.qos.logback.core.FileAppender;
 import ch.qos.logback.classic.LoggerContext;
+import ch.qos.logback.classic.AsyncAppender;
 import org.slf4j.LoggerFactory;
 
 
 public class LogbackUtil {
 
-  FileAppender fileAppender;
-  Logger logbackLogger;
+  public static final String ICMS_BATCH_LOGGER = "ICMS_BATCH";
+  public static final String FILE_APPENDER = "FILE";
+  public static final String ASYNC_APPENDER = "ASYNC";
 
-  public void test() {
-    Logger logbackLogger = getLogger(HelloWorld.class);
-    setFileName("ABC3", logbackLogger);
+  private FileAppender fileAppender;
+  private Logger logbackLogger;
+
+  public void initialize() {
+    this.logbackLogger = getLogger(HelloWorld.class);
+  }
+
+  public void setLogname(String logname) {
+    setFileName(logname, logbackLogger);
   }
 
   public void setFileName(String logName, Logger logger) {
     LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
-    this.fileAppender = (FileAppender)loggerContext.getLogger("ICMS_BATCH").getAppender("FILE");
+    this.fileAppender = (FileAppender)loggerContext.getLogger(ICMS_BATCH_LOGGER).getAppender(FILE_APPENDER);
     this.fileAppender.setFile(logName);
     this.fileAppender.start();
     logger.addAppender(this.fileAppender);
-
   }
 
   public Logger getLogger(Class<?> obj) {
     LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
     this.logbackLogger = loggerContext.getLogger(obj);
-    this.logbackLogger.addAppender(loggerContext.getLogger("ICMS_BATCH").getAppender("ASYNC"));
+    AsyncAppender asyncAppender = (AsyncAppender)loggerContext.getLogger(ICMS_BATCH_LOGGER).getAppender(ASYNC_APPENDER);
+    asyncAppender.start();
+    this.logbackLogger.addAppender(asyncAppender);
     return this.logbackLogger;
   }
 
@@ -38,12 +47,12 @@ public class LogbackUtil {
   public void setFileAppender(String logName) {
     LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
 
-    //loggerContext.getLogger("ICMS_BATCH").getAppender("FILE");
+    //loggerContext.getLogger(ICMS_BATCH_LOGGER).getAppender("FILE");
     this.fileAppender = new FileAppender();
     this.fileAppender.setContext(loggerContext);
     //this.fileAppender.setName("timestamp");
     // set the file name
-    System.out.println( "Appender name = " + loggerContext.getLogger("ICMS_BATCH").getAppender("FILE") );
+    System.out.println( "Appender name = " + loggerContext.getLogger(ICMS_BATCH_LOGGER).getAppender(FILE_APPENDER) );
     this.fileAppender.setFile(logName);
 
     PatternLayoutEncoder encoder = new PatternLayoutEncoder();

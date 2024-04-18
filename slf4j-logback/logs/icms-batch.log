@@ -1,36 +1,10 @@
-2024-04-18 09:48:19,394 DEBUG c.o.HelloWorld [main] Hello from Logback
-2024-04-18 09:48:19,396 DEBUG c.o.HelloWorld [main] getNumber() : 5
-2024-04-18 09:48:19,398 DEBUG c.o.HelloWorld [main] This is a DEBUG message.
-2024-04-18 09:48:19,398 INFO c.o.HelloWorld [main] This is an INFO message.
-2024-04-18 09:48:19,399 WARN c.o.HelloWorld [main] This is a WARN message.
-2024-04-18 09:48:19,399 ERROR c.o.HelloWorld [main] This is an ERROR message.
+2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] GO to batch log 1 only before logfile name is set
+2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] GO to batch log 1 only before logfile name is set
+2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] Hello from Logback
+2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] getNumber() : 5
+2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] This is a DEBUG message.
+2024-04-18 10:51:39,635 INFO c.o.HelloWorld [main] This is an INFO message.
+2024-04-18 10:51:39,635 WARN c.o.HelloWorld [main] This is a WARN message.
+2024-04-18 10:51:39,635 ERROR c.o.HelloWorld [main] This is an ERROR message.
 java.lang.RuntimeException: Sample Exception
-	at com.optionslab.HelloWorld.main(HelloWorld.java:43)
-2024-04-18 09:48:19,400 INFO c.o.HelloWorld [main] User John is 30 years old.
-2024-04-18 09:51:37,121 DEBUG c.o.HelloWorld [main] Hello from Logback
-2024-04-18 09:51:37,122 DEBUG c.o.HelloWorld [main] getNumber() : 5
-2024-04-18 09:51:37,122 DEBUG c.o.HelloWorld [main] This is a DEBUG message.
-2024-04-18 09:51:37,122 INFO c.o.HelloWorld [main] This is an INFO message.
-2024-04-18 09:51:37,123 WARN c.o.HelloWorld [main] This is a WARN message.
-2024-04-18 09:51:37,123 ERROR c.o.HelloWorld [main] This is an ERROR message.
-java.lang.RuntimeException: Sample Exception
-	at com.optionslab.HelloWorld.main(HelloWorld.java:44)
-2024-04-18 09:51:37,125 INFO c.o.HelloWorld [main] User John is 30 years old.
-2024-04-18 09:52:11,617 DEBUG c.o.HelloWorld [main] Hello from Logback
-2024-04-18 09:52:11,617 DEBUG c.o.HelloWorld [main] getNumber() : 5
-2024-04-18 09:52:11,618 DEBUG c.o.HelloWorld [main] This is a DEBUG message.
-2024-04-18 09:52:11,618 INFO c.o.HelloWorld [main] This is an INFO message.
-2024-04-18 09:52:11,618 WARN c.o.HelloWorld [main] This is a WARN message.
-2024-04-18 09:52:11,618 ERROR c.o.HelloWorld [main] This is an ERROR message.
-java.lang.RuntimeException: Sample Exception
-	at com.optionslab.HelloWorld.main(HelloWorld.java:44)
-2024-04-18 09:52:11,620 INFO c.o.HelloWorld [main] User John is 30 years old.
-2024-04-18 09:59:07,358 DEBUG c.o.HelloWorld [main] Hello from Logback
-2024-04-18 09:59:07,359 DEBUG c.o.HelloWorld [main] getNumber() : 5
-2024-04-18 09:59:07,360 DEBUG c.o.HelloWorld [main] This is a DEBUG message.
-2024-04-18 09:59:07,360 INFO c.o.HelloWorld [main] This is an INFO message.
-2024-04-18 09:59:07,361 WARN c.o.HelloWorld [main] This is a WARN message.
-2024-04-18 09:59:07,361 ERROR c.o.HelloWorld [main] This is an ERROR message.
-java.lang.RuntimeException: Sample Exception
-	at com.optionslab.HelloWorld.main(HelloWorld.java:47)
-2024-04-18 09:59:07,362 INFO c.o.HelloWorld [main] User John is 30 years old.
+	at com.optionslab.HelloWorld.main(HelloWorld.java:52)
