@@ -66,3 +66,77 @@ java.lang.RuntimeException: Sample Exception
 	at com.optionslab.HelloWorld.main(HelloWorld.java:50)
 2024-04-18 13:00:42,915 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
 2024-04-18 13:00:42,915 [main] INFO  com.optionslab.HelloWorld - ---------------END----------------
+2024-04-18 13:03:05,796 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:03:05,796 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:03:05,796 [main] INFO  com.optionslab.HelloWorld - ---------------START----------------
+2024-04-18 13:03:05,810 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 13:03:05,810 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 13:03:05,810 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 13:03:05,810 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 13:03:05,810 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 13:03:05,810 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.optionslab.HelloWorld.main(HelloWorld.java:50)
+2024-04-18 13:03:05,810 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 13:03:05,810 [main] INFO  com.optionslab.HelloWorld - ---------------END----------------
+2024-04-18 13:03:05,810 [main] DEBUG com.optionslab.HelloWorld - This is a CCCC DEBUG message.
+2024-04-18 13:03:05,810 [main] INFO  com.optionslab.HelloWorld - This is an CCCC INFO message.
+2024-04-18 13:03:05,810 [main] DEBUG com.optionslab.HelloWorld - This is a DDDD DEBUG message.
+2024-04-18 13:03:05,810 [main] INFO  com.optionslab.HelloWorld - This is an DDDD INFO message.
+2024-04-18 13:05:38,315 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:05:38,315 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:05:38,315 [main] INFO  com.optionslab.HelloWorld - ---------------START----------------
+2024-04-18 13:05:38,322 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 13:05:38,322 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 13:05:38,322 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 13:05:38,322 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 13:05:38,322 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 13:05:38,322 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.optionslab.HelloWorld.main(HelloWorld.java:50)
+2024-04-18 13:05:38,322 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 13:05:38,322 [main] INFO  com.optionslab.HelloWorld - ---------------END----------------
+2024-04-18 13:05:38,322 [main] DEBUG com.optionslab.HelloWorld - This is a CCCC DEBUG message.
+2024-04-18 13:05:38,322 [main] INFO  com.optionslab.HelloWorld - This is a CCCC INFO message.
+2024-04-18 13:05:38,322 [main] WARN  com.optionslab.HelloWorld - This is CCCC INFO message.
+2024-04-18 13:05:38,322 [main] DEBUG com.optionslab.HelloWorld - This is a DDDD DEBUG message.
+2024-04-18 13:05:38,322 [main] INFO  com.optionslab.HelloWorld - This is  DDDD INFO message.
+2024-04-18 13:05:38,322 [main] WARN  com.optionslab.HelloWorld - This is  DDDD INFO message.
+2024-04-18 13:06:11,582 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:06:11,583 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:06:11,583 [main] INFO  com.optionslab.HelloWorld - ---------------START----------------
+2024-04-18 13:06:11,584 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 13:06:11,584 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 13:06:11,585 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 13:06:11,585 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 13:06:11,585 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 13:06:11,585 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.optionslab.HelloWorld.main(HelloWorld.java:50)
+2024-04-18 13:06:11,586 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 13:06:11,586 [main] INFO  com.optionslab.HelloWorld - ---------------END----------------
+2024-04-18 13:06:11,588 [main] DEBUG com.optionslab.HelloWorld - This is a CCCC DEBUG message.
+2024-04-18 13:06:11,588 [main] INFO  com.optionslab.HelloWorld - This is a CCCC INFO message.
+2024-04-18 13:06:11,588 [main] WARN  com.optionslab.HelloWorld - This is CCCC WARN message.
+2024-04-18 13:06:11,594 [main] DEBUG com.optionslab.HelloWorld - This is a DDDD DEBUG message.
+2024-04-18 13:06:11,595 [main] INFO  com.optionslab.HelloWorld - This is  DDDD INFO message.
+2024-04-18 13:06:11,595 [main] WARN  com.optionslab.HelloWorld - This is  DDDD WARN message.
+2024-04-18 13:06:48,492 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:06:48,493 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:06:48,494 [main] INFO  com.optionslab.HelloWorld - ---------------START----------------
+2024-04-18 13:06:48,494 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 13:06:48,494 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 13:06:48,495 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 13:06:48,495 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 13:06:48,496 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 13:06:48,497 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.optionslab.HelloWorld.main(HelloWorld.java:50)
+2024-04-18 13:06:48,498 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 13:06:48,499 [main] INFO  com.optionslab.HelloWorld - ---------------END----------------
+2024-04-18 13:06:48,501 [main] DEBUG com.optionslab.HelloWorld - This is a CCCC DEBUG message.
+2024-04-18 13:06:48,501 [main] INFO  com.optionslab.HelloWorld - This is a CCCC INFO message.
+2024-04-18 13:06:48,501 [main] WARN  com.optionslab.HelloWorld - This is a CCCC WARN message.
+2024-04-18 13:06:48,503 [main] DEBUG com.optionslab.HelloWorld - This is a DDDD DEBUG message.
+2024-04-18 13:06:48,503 [main] INFO  com.optionslab.HelloWorld - This is a DDDD INFO message.
+2024-04-18 13:06:48,503 [main] WARN  com.optionslab.HelloWorld - This is a DDDD WARN message.

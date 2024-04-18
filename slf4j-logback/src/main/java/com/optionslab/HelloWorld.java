@@ -53,6 +53,16 @@ public class HelloWorld {
         logger.info("User {} is {} years old.", name, age);
         logger.info("---------------END----------------");
 
+        logbackUtil.setLogname("CCCC");
+        logger.debug("This is a CCCC DEBUG message.");
+        logger.info("This is a CCCC INFO message.");
+        logger.warn("This is a CCCC WARN message.");
+
+        logbackUtil.setLogname("DDDD");
+        logger.debug("This is a DDDD DEBUG message.");
+        logger.info("This is a DDDD INFO message.");
+        logger.warn("This is a DDDD WARN message.");
+
     }
 
     static int getNumber() {
