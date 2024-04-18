@@ -1,4 +1,4 @@
-1.  java -jar target\slf4j-logback-1.0.jar
+1. java -jar target\slf4j-logback-1.0.jar
 2. simplelogger.properties, once present, overrides logback.xml ?? Also depends on pom.xml
 
 A. SLF4J works by tself and use simplelogger.properties,
@@ -10,3 +10,10 @@ D. Goal. Log each individual file to individual log and also logs all of them to
 The logback.xml allows you to log two separate log files:
 1. application log: This will log all messages into a single log file, also rotate: Default is logs/icms-batch.log
 2. batch log: This will log to C:\Work\PCAICMSBATCH\ICMS_Batch\business_processes\qa2\temp\himrk_daily_incoming_15p20230923.09-23-2023_0503.03-27-2024_1004_qa2_java_log.1
+
+To make it happen:
+
+1. Replace SLF4J with logback in pom.xml
+2. Make below call in BootstrapWorkflow:
+ System.setProperty("log.name",
+          "C:\\Work\\PCAICMSBATCH\\ICMS_Batch\\business_processes\\qa2\\temp\\himrk_daily_incoming_15p20230923.09-23-2023_0503.03-27-2024_1004_qa2_java_log.2");
