@@ -1,21 +1,68 @@
-2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] GO to batch log 1 only before logfile name is set
-2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] GO to batch log 1 only before logfile name is set
-2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] Hello from Logback
-2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] getNumber() : 5
-2024-04-18 10:51:39,635 DEBUG c.o.HelloWorld [main] This is a DEBUG message.
-2024-04-18 10:51:39,635 INFO c.o.HelloWorld [main] This is an INFO message.
-2024-04-18 10:51:39,635 WARN c.o.HelloWorld [main] This is a WARN message.
-2024-04-18 10:51:39,635 ERROR c.o.HelloWorld [main] This is an ERROR message.
+2024-04-18 11:02:32,838 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 11:02:32,839 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 11:02:32,840 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 11:02:32,841 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 11:02:32,844 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 11:02:32,845 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 11:02:32,847 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 11:02:32,847 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
 java.lang.RuntimeException: Sample Exception
 	at com.optionslab.HelloWorld.main(HelloWorld.java:52)
-2024-04-18 10:55:41,365 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
-2024-04-18 10:55:41,366 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
-2024-04-18 10:55:41,367 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
-2024-04-18 10:55:41,367 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
-2024-04-18 10:55:41,368 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
-2024-04-18 10:55:41,368 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
-2024-04-18 10:55:41,369 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
-2024-04-18 10:55:41,369 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+2024-04-18 11:02:32,851 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 11:05:31,025 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 11:05:31,026 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 11:05:31,028 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 11:05:31,028 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 11:05:31,029 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 11:05:31,029 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 11:05:31,030 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 11:05:31,030 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
 java.lang.RuntimeException: Sample Exception
 	at com.optionslab.HelloWorld.main(HelloWorld.java:52)
-2024-04-18 10:55:41,370 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 11:05:31,030 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 12:48:13,141 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 12:48:13,141 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 12:48:13,142 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 12:48:13,143 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 12:48:13,144 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 12:48:13,144 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 12:48:13,145 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 12:48:13,145 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.optionslab.HelloWorld.main(HelloWorld.java:49)
+2024-04-18 12:48:13,146 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 12:49:27,898 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 12:49:27,898 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 12:49:27,899 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 12:49:27,900 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 12:49:27,900 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 12:49:27,901 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 12:49:27,901 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 12:49:27,901 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.optionslab.HelloWorld.main(HelloWorld.java:49)
+2024-04-18 12:49:27,902 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 12:58:42,256 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 12:58:42,256 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 12:58:42,256 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 12:58:42,256 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 12:58:42,256 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 12:58:42,256 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 12:58:42,264 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 12:58:42,265 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.optionslab.HelloWorld.main(HelloWorld.java:49)
+2024-04-18 12:58:42,265 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 13:00:42,912 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:00:42,912 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 13:00:42,912 [main] INFO  com.optionslab.HelloWorld - ---------------START----------------
+2024-04-18 13:00:42,915 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 13:00:42,915 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 13:00:42,915 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 13:00:42,915 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 13:00:42,915 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 13:00:42,915 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.optionslab.HelloWorld.main(HelloWorld.java:50)
+2024-04-18 13:00:42,915 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
+2024-04-18 13:00:42,915 [main] INFO  com.optionslab.HelloWorld - ---------------END----------------

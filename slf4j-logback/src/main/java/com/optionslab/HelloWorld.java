@@ -12,10 +12,7 @@ public class HelloWorld {
 
     public static void main(String[] args) {
 
-        LogbackUtil logbackUtil = new LogbackUtil();
-
-        logbackUtil.initialize();
-
+        LogbackUtil logbackUtil = new LogbackUtil(HelloWorld.class);
 
         logger.debug("GO to batch log 1 only before logfile name is set");
         logger.debug("GO to batch log 1 only before logfile name is set");
@@ -43,6 +40,7 @@ public class HelloWorld {
         LogbackFileUtils.stop();
         */
 
+        logger.info("---------------START----------------");
         logger.debug("Hello from Logback");
         logger.debug("getNumber() : {}", getNumber());
         logger.trace("This is a TRACE message.");
@@ -53,6 +51,7 @@ public class HelloWorld {
         String name = "John";
         int age = 30;
         logger.info("User {} is {} years old.", name, age);
+        logger.info("---------------END----------------");
 
     }
 

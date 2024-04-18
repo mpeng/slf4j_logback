@@ -17,6 +17,10 @@ public class LogbackUtil {
   private FileAppender fileAppender;
   private Logger logbackLogger;
 
+  LogbackUtil(Class<?> obj) {
+    this.logbackLogger = getLogger(obj);
+  }
+
   public void initialize() {
     this.logbackLogger = getLogger(HelloWorld.class);
   }
