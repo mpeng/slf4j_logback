@@ -1,4 +1,4 @@
-package com.mkyong;
+package com.optionslab;
 
 import ch.qos.logback.classic.Level;
 import org.slf4j.LoggerFactory;

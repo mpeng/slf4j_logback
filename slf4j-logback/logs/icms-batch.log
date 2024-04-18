@@ -1,9 +1,9 @@
-2024-04-18 09:44:03,108 DEBUG c.m.HelloWorld [main] Hello from Logback
-2024-04-18 09:44:03,108 DEBUG c.m.HelloWorld [main] getNumber() : 5
-2024-04-18 09:44:03,108 DEBUG c.m.HelloWorld [main] This is a DEBUG message.
-2024-04-18 09:44:03,108 INFO c.m.HelloWorld [main] This is an INFO message.
-2024-04-18 09:44:03,108 WARN c.m.HelloWorld [main] This is a WARN message.
-2024-04-18 09:44:03,108 ERROR c.m.HelloWorld [main] This is an ERROR message.
+2024-04-18 09:48:19,394 DEBUG c.o.HelloWorld [main] Hello from Logback
+2024-04-18 09:48:19,396 DEBUG c.o.HelloWorld [main] getNumber() : 5
+2024-04-18 09:48:19,398 DEBUG c.o.HelloWorld [main] This is a DEBUG message.
+2024-04-18 09:48:19,398 INFO c.o.HelloWorld [main] This is an INFO message.
+2024-04-18 09:48:19,399 WARN c.o.HelloWorld [main] This is a WARN message.
+2024-04-18 09:48:19,399 ERROR c.o.HelloWorld [main] This is an ERROR message.
 java.lang.RuntimeException: Sample Exception
-	at com.mkyong.HelloWorld.main(HelloWorld.java:48)
-2024-04-18 09:44:03,108 INFO c.m.HelloWorld [main] User John is 30 years old.
+	at com.optionslab.HelloWorld.main(HelloWorld.java:43)
+2024-04-18 09:48:19,400 INFO c.o.HelloWorld [main] User John is 30 years old.

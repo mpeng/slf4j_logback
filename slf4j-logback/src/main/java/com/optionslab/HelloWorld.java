@@ -1,10 +1,5 @@
-package com.mkyong;
+package com.optionslab;
 
-import ch.qos.logback.classic.Level;
-import ch.qos.logback.classic.LoggerContext;
-import ch.qos.logback.classic.encoder.PatternLayoutEncoder;
-import ch.qos.logback.classic.spi.ILoggingEvent;
-import ch.qos.logback.core.FileAppender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
