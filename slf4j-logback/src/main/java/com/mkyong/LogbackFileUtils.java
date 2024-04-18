@@ -12,15 +12,21 @@ import ch.qos.logback.core.FileAppender;
 class LogbackFileUtils {
 
   public static final String MY_LOGGER = "MY_LOGGER";
-  public static final String ICMS = "com.mkyong";
+  public static final String ICMS = "icms";
   private static FileAppender<ILoggingEvent> fileAppender;
   private static boolean initialized = false;
+
+  private org.slf4j.Logger logger;
+
+  LogbackFileUtils(org.slf4j.Logger logger) {
+    this.logger = logger;
+  }
 
   public static void init() {
     if (!initialized) {
       LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
       Logger myLogger = loggerContext.getLogger(MY_LOGGER);
-      Logger icmsLogger = loggerContext.getLogger(ICMS);
+      org.slf4j.Logger icmsLogger = LoggerFactory.getLogger(ICMS); //loggerContext.getLogger(ICMS);
       System.out.println( "========================myLogger======" + myLogger );
       System.out.println( "========================icmsLogger======" + icmsLogger );
 
