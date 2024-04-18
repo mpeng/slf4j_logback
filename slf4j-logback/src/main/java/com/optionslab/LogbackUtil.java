@@ -14,22 +14,21 @@ public class LogbackUtil {
 
   public void test() {
     Logger logbackLogger = getLogger(HelloWorld.class);
-    setFileName("ABC3");
+    setFileName("ABC3", logbackLogger);
   }
 
-  public void setFileName(String logName) {
+  public void setFileName(String logName, Logger logger) {
     LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
     this.fileAppender = (FileAppender)loggerContext.getLogger("ICMS_BATCH").getAppender("FILE");
     this.fileAppender.setFile(logName);
     this.fileAppender.start();
-    this.logbackLogger.addAppender(this.fileAppender);
+    logger.addAppender(this.fileAppender);
 
   }
 
   public Logger getLogger(Class<?> obj) {
     LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
     this.logbackLogger = loggerContext.getLogger(obj);
-    //this.logbackLogger.setLevel(Level.ALL);
     this.logbackLogger.addAppender(loggerContext.getLogger("ICMS_BATCH").getAppender("ASYNC"));
     return this.logbackLogger;
   }

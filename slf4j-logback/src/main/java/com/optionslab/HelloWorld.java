@@ -1,17 +1,19 @@
 package com.optionslab;
 
-import org.slf4j.Logger;
+//import org.slf4j.Logger;
+import ch.qos.logback.classic.Logger;
 import org.slf4j.LoggerFactory;
 
 public class HelloWorld {
-    
-    private static final Logger logger = LoggerFactory.getLogger(HelloWorld.class);
-    private static Logger myLogger = LoggerFactory.getLogger(LogbackFileUtils.MY_LOGGER);
-    private static Logger icmsLogger = LoggerFactory.getLogger(LogbackFileUtils.ICMS);
+
+    private static final Logger logger = new LogbackUtil().getLogger(HelloWorld.class);
+    //private static final Logger logger = LoggerFactory.getLogger(HelloWorld.class);
+    //private static Logger myLogger = LoggerFactory.getLogger(LogbackFileUtils.MY_LOGGER);
+    //private static Logger icmsLogger = LoggerFactory.getLogger(LogbackFileUtils.ICMS);
 
     public static void main(String[] args) {
 
-        new LogbackUtil().test();
+        //new LogbackUtil().test();
 
         //icmsLogger.info( "Welcome" );
         //icmsLogger.debug( "From ICMS Logger");
@@ -33,6 +35,8 @@ public class HelloWorld {
         myLogger.error("2nd file - This is an error message");
         LogbackFileUtils.stop();
         */
+
+        new LogbackUtil().setFileName( "ABCD", logger );
 
         logger.debug("Hello from Logback");
         logger.debug("getNumber() : {}", getNumber());
