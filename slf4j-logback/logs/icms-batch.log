@@ -8,3 +8,14 @@
 2024-04-18 10:51:39,635 ERROR c.o.HelloWorld [main] This is an ERROR message.
 java.lang.RuntimeException: Sample Exception
 	at com.optionslab.HelloWorld.main(HelloWorld.java:52)
+2024-04-18 10:55:41,365 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 10:55:41,366 [main] DEBUG com.optionslab.HelloWorld - GO to batch log 1 only before logfile name is set
+2024-04-18 10:55:41,367 [main] DEBUG com.optionslab.HelloWorld - Hello from Logback
+2024-04-18 10:55:41,367 [main] DEBUG com.optionslab.HelloWorld - getNumber() : 5
+2024-04-18 10:55:41,368 [main] DEBUG com.optionslab.HelloWorld - This is a DEBUG message.
+2024-04-18 10:55:41,368 [main] INFO  com.optionslab.HelloWorld - This is an INFO message.
+2024-04-18 10:55:41,369 [main] WARN  com.optionslab.HelloWorld - This is a WARN message.
+2024-04-18 10:55:41,369 [main] ERROR com.optionslab.HelloWorld - This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.optionslab.HelloWorld.main(HelloWorld.java:52)
+2024-04-18 10:55:41,370 [main] INFO  com.optionslab.HelloWorld - User John is 30 years old.
