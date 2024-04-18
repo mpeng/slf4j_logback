@@ -1,41 +1,60 @@
 package com.mkyong;
 
+import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.encoder.PatternLayoutEncoder;
 import ch.qos.logback.core.FileAppender;
-import ch.qos.logback.core.util.StatusPrinter;
-import org.slf4j.LoggerFactory;
 import ch.qos.logback.classic.LoggerContext;
+import org.slf4j.LoggerFactory;
 
 
 public class LogbackUtil {
 
+  FileAppender fileAppender;
+  Logger logbackLogger;
+
   public void test() {
+    Logger logbackLogger = getLogger(HelloWorld.class);
+    setFileName("ABC3");
+  }
+
+  public void setFileName(String logName) {
+    LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
+    this.fileAppender = (FileAppender)loggerContext.getLogger("ICMS_BATCH").getAppender("FILE");
+    this.fileAppender.setFile(logName);
+    this.fileAppender.start();
+    this.logbackLogger.addAppender(this.fileAppender);
+
+  }
+
+  public Logger getLogger(Class<?> obj) {
+    LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
+    this.logbackLogger = loggerContext.getLogger(obj);
+    //this.logbackLogger.setLevel(Level.ALL);
+    this.logbackLogger.addAppender(loggerContext.getLogger("ICMS_BATCH").getAppender("ASYNC"));
+    return this.logbackLogger;
+  }
+
+
+
+  public void setFileAppender(String logName) {
     LoggerContext loggerContext = (LoggerContext) LoggerFactory.getILoggerFactory();
 
-    FileAppender fileAppender = new FileAppender();
-    fileAppender.setContext(loggerContext);
-    fileAppender.setName("timestamp");
+    //loggerContext.getLogger("ICMS_BATCH").getAppender("FILE");
+    this.fileAppender = new FileAppender();
+    this.fileAppender.setContext(loggerContext);
+    //this.fileAppender.setName("timestamp");
     // set the file name
-    fileAppender.setFile("log/" + System.currentTimeMillis()+".log");
+    System.out.println( "Appender name = " + loggerContext.getLogger("ICMS_BATCH").getAppender("FILE") );
+    this.fileAppender.setFile(logName);
 
     PatternLayoutEncoder encoder = new PatternLayoutEncoder();
     encoder.setContext(loggerContext);
     encoder.setPattern("%r %thread %level - %msg%n");
     encoder.start();
 
-    fileAppender.setEncoder(encoder);
-    fileAppender.start();
-
-    // attach the rolling file appender to the logger of your choice
-    Logger logbackLogger = loggerContext.getLogger("icms");
-    logbackLogger.addAppender(fileAppender);
-
-    // log something
-    logbackLogger.debug("hello");
-  }
-
-  public Logger getLogger() {
-    return null;
+    this.fileAppender.setEncoder(encoder);
+    this.fileAppender.start();
+    this.logbackLogger.addAppender(this.fileAppender);
   }
 }

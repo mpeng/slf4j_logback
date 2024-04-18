@@ -1,5 +1,9 @@
-2024-04-18 06:59:43,406 INFO icms [main] Welcome
-2024-04-18 06:59:43,413 DEBUG icms [main] From ICMS Logger
-2024-04-18 07:01:27,791 DEBUG icms [main] hello
-2024-04-18 07:01:27,792 INFO icms [main] Welcome
-2024-04-18 07:01:27,800 DEBUG icms [main] From ICMS Logger
+2024-04-18 09:44:03,108 DEBUG c.m.HelloWorld [main] Hello from Logback
+2024-04-18 09:44:03,108 DEBUG c.m.HelloWorld [main] getNumber() : 5
+2024-04-18 09:44:03,108 DEBUG c.m.HelloWorld [main] This is a DEBUG message.
+2024-04-18 09:44:03,108 INFO c.m.HelloWorld [main] This is an INFO message.
+2024-04-18 09:44:03,108 WARN c.m.HelloWorld [main] This is a WARN message.
+2024-04-18 09:44:03,108 ERROR c.m.HelloWorld [main] This is an ERROR message.
+java.lang.RuntimeException: Sample Exception
+	at com.mkyong.HelloWorld.main(HelloWorld.java:48)
+2024-04-18 09:44:03,108 INFO c.m.HelloWorld [main] User John is 30 years old.

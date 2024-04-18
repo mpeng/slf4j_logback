@@ -12,7 +12,7 @@ import ch.qos.logback.core.FileAppender;
 class LogbackFileUtils {
 
   public static final String MY_LOGGER = "MY_LOGGER";
-  public static final String ICMS = "icms";
+  public static final String ICMS = "ICMS_BATCH";
   private static FileAppender<ILoggingEvent> fileAppender;
   private static boolean initialized = false;
 

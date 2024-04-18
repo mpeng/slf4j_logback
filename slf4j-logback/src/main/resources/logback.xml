@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true">
 
-    <property name="BATCH_LOG" value="${log.name}"/>
+
     <property name="APP_LOG" value="./logs/icms-batch.log"/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
@@ -13,7 +13,7 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>${BATCH_LOG}</file>
+        <file>TMP</file>
 
         <append>true</append>
         <encoder>
@@ -48,13 +48,13 @@
     </appender>
 
 
-    <logger name="icms" level="debug" additivity="false">
+    <logger name="ICMS_BATCH" level="debug" additivity="false">
         <appender-ref ref="ASYNC"/>
         <appender-ref ref="FILE"/>
         <appender-ref ref="CONSOLE"/>
     </logger>
 
-    <root level="error">
+    <root level="debug">
         <appender-ref ref="CONSOLE"/>
     </root>
 
